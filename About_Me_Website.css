@@ -1,0 +1,12 @@
+.tab {
+    overflow: hidden
+}
+
+.tab_link {
+    color: royalblue
+}
+
+.tab_content {
+    display: none
+}
+
