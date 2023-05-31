@@ -11,41 +11,108 @@
         <script type="text/javascript" src = "About_Me_Website.js"></script>
         <div class = "tab"> 
             <button class = "tab_link" onclick = "tabButton(event, 'H')" id="defaultOpen">Home</button>
-            <button class = "tab_link" onclick = "tabButton(event, 'AM')">About Me</button>
             <button class = "tab_link" onclick = "tabButton(event, 'P')">Projects</button>
         </div>
 
         <div id = "H" class = "tab_content">
-            <p >Random Stuff for home</p>
-        </div>
+            <div class = "container">
+                <div class = "section-text">
+                    <h2 style = "text-shadow: 1px 1px 0px rgb(87, 77, 73);">Hello, I am Brayan. I am a software developer.</h2>
+                    <p>I am a senior at the University of Houston looking for employment opportunities in the computer science field. I value clarity and perseverence above all else. These ideals guide my general approach to problem solving and life in general.</p>
+                    <p>I was born in Tegucigalpa, Honduras and moved to the United States at the age of 10. I enjoy gaming, coding, playing soccer and volleyball, and trying new foods. The purpose of this website is to serve as a portfolio and to practice on my CSS, HTML, and Javascript knowledge.</p>
+                    <p style = "color: black;"></p>
+                </div>
 
-        
-        <div id = "AM" class = "tab_content">
-            <div class = "container">
                 <div class = "section">
-                    <img class = "Rotate" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7AaTzh-aEPZQT_mBrsEewGN5j-H-6RX1Q2wZWZ09LHA&usqp=CAU&ec=48665699">
-                </div>
-                <br></br>
-                <div class = "section-text">
-                    <h2 style = "color: whitesmoke">Who am I?</h2>
-                    <p style = "color: whitesmoke">My name is Brayan Sosa and I am currently a senior studying computer science at the University of Houston</p>
-                </div>
-            </div>
-            <br></br>
-            <div class = "container">
-                <div class = "section">
-                    <img class = "Rotate" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7AaTzh-aEPZQT_mBrsEewGN5j-H-6RX1Q2wZWZ09LHA&usqp=CAU&ec=48665699">
-                </div>
-                <br></br>
-                <div class = "section-text">
-                    <h2 style = "color: whitesmoke">What are my interests?</h2>
-                    <p style = "color: whitesmoke">dsijfnsofns</p>
+                    <center><img class = "Rotate" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7AaTzh-aEPZQT_mBrsEewGN5j-H-6RX1Q2wZWZ09LHA&usqp=CAU&ec=48665699"></center>
+                    
                 </div>
             </div>
         </div>
 
         <div id = "P" class = "tab_content">
-            <p>Random Stuff for Projects</p>
+            <div class = "container" id = "Clin_DB">
+                <div class = "section">
+                    <h2 style = "text-shadow: 1px 1px 0px rgb(87, 77, 73);"><a href = "https://github.com/BrayanSosa04/DB-Project-Repo">Clinic DB w/ UI</a></h2>
+                </div>
+
+                <div class = "section">
+
+                </div>
+            </div>
+            <br></br>
+            <div class = "container" id = "AI">
+                <div class = "section">
+                    <center><img src = "3d world.PNG" style = "margin-left: 5%; margin-top: 2%; border-radius: 20px; width: 400px;"></center>
+                    <center><h3>This a snapshot of the agents moving around the world while the process is still running</h3></center>
+                </div>
+
+                <div class = "section">
+                    <h2 style = "text-shadow: 1px 1px 0px rgb(87, 77, 73);"><a href = "https://github.com/Straw28/AI-Group-Proj">2 Agents in a 3D World:</a></h2>
+                    <p>This is one of my most recent projects where I was tasked to apply methods that I learned in my AI class.
+                        I was tasked with devicing two agents that are placed in a 3D world of size 3x3x3. These two agents were tasked
+                        with traversing the 3D world and collecting blocks at "pickup cells" and dropping them off at "drop off cells." The actions that the agents
+                        take yields rewards, those being: regular cells have a reward of -1, pickup cells(and picking up blocks) 14, drop off cells(dropping off blocks) 14, risky cells -2.
+                        There are a few more rules in this world like the two agents can't be in the same cell, pick up cells can't be accessed
+                        if the agents already have a block, and drop off cells can't be accessed if the agent does not have a block.
+                        With those rules out of the way the agents traveled around the world through the use of either SARSA or
+                        QLearning depending on the experiment that is being run. Both of these learning strategies employ learning policies those being
+                        P-Random, P-Greedy, and P-Exploit. P-Random chooses a direction randomly as long as it follows the rules and is not out of bounds.
+                        P-Greedy chooses the direction based on which future direction has the highest Q-value and is a valid direction to take. Finally P-Exploit randomly
+                        chooses between either P-Greedy or P-random based on a 80/20 proportion respectively. The agent will travel around the world using all these methods and 
+                        updating the Q-table to take better decisions as they continue traveling around the world with a limit of 10,000 steps to pick up all blocks and drop them off while yielding 
+                        the highest possible reward.
+                    </p>
+                </div>
+            </div>
+            <br></br>
+            <div class = "container" id = "Data Science">
+                <div class = "section">
+                    <h2 style = "text-shadow: 1px 1px 0px rgb(87, 77, 73);"><a href = "https://github.com/BrayanSosa04/Tennis-Analysis-DataSet">Tennis Data Analysis:</a></h2>
+                    <p>This project along with my CT Scan project are one of my early projects
+                        that I worked on. In this project I dabbled into  data science being
+                        tasked with finding a data set and running a few of the algorithms that 
+                        I was taught and interpreting the results. I ended up selecting a Tennis
+                        tournament data set with 2000+ observations. I began by cleaning up my data 
+                        by deleting any predictors that I deemed unnecessary, filling in any missing values, 
+                        and scaling/factoring all of my parameters. After all of the data cleaning was 
+                        completed I split my data set into a training and a testing set and then I 
+                        performed the Kth-Nearest Neighbor and SVM algorithm unto my two sets. Both of my 
+                        data models were able to yield an accuracy 80%+ meaning that we will be able to
+                        successfully predict the results of a match correctly 80% of the time. My report mainly
+                        consisted talking about what the 80% accuracy means, all the nuiancess with my data set,
+                        small section talking about over-fitting, and how the data models work.                   
+                    </p>
+
+                </div>
+
+                <div class = "section">
+                    <img src = "tennis ss.PNG" style = "margin-left: 5%; margin-top: 2%; border-radius: 20px; width: 550px;">
+                    <center><h3>This is my confusion table after running a radial SVM</h3></center>
+                </div>
+            </div>
+            <br></br>
+            <div class = "container">
+                <div class = "section">
+                    <img src = "Capture.PNG" style = "margin-left: 5%; margin-top: 2%; border-radius: 20px; width: 800px; height: 200px;">
+                    <center><h3>This is an example of a 5 slice image </h3></center>
+                </div>
+
+                <div class = "section">
+                    <h2 style = "text-shadow: 1px 1px 0px rgb(87, 77, 73);"><a href = "https://github.com/BrayanSosa04/CT-Scan-Reconstruction-Algo">CT-Scan Simulation:</a></h2>
+                    <p>This is one of my early projects. In this project the goal was to create a simulation of a CT Scan, in this case, a virtual CT Scan. 
+                        We begin this project by creating an object to perform the image reconstruction of the CT scan. We call this image a "virtual phantom"
+                        which serves as a stand in for what a CT scan is normally used for. I created my phantom to simulate a human brain and allow the user to
+                        choose the dimensions of the phantom (which will be of size nxn). After the creation of our object we then have to simulate the image "slicing" 
+                        that a CT scan does. Normally CT scans scan sections of the full object and then put them back together. Since I don't have pre-made "slices" 
+                        for my image, I chose to let the user input the amount of slices that they would like to see for the image and the direction of the cuts(diagonal, horizontal, or vertical). 
+                        The orientation of the images play a huge part in the way the cut is done, horizontal and vertical cuts are quite simple. However diagonal cuts are 
+                        not as simple, I decided to use the linear inequality "x + y <= ((row+col)*(1/numberofImageSlices))" to figure out the diagonal slices that should be done. Keep in mind that equation is soley for the first slice but the rest follow a similar pattern.
+                        I then create X amount of slices all based on user input to our image. Finally, we get around to image reconstruction which the CT scan is all about. Using the slices that were
+                        created previously I put together the image that we made before. I create an empty image with the size that the user asked for and for horizontal, diagonal, 
+                        and vertical images it is quite simple we are able to add the images next to to each as they are being sliced in order to avoid any overlap or wrongly ordered images.</p>   
+                </div>
+            </div>
         </div>
 
     </body>
