@@ -13,13 +13,8 @@ body{
   margin-left: 10%;
   margin-top: 2%;
   border-radius: 20px;
+  width: 100px
 }
-
-.Rotate_Home{
-  width: 150px;
-  animation: rotation 7s infinite linear;
-  border-radius: 20px;
-  }
 
 @keyframes rotation {
 from {
